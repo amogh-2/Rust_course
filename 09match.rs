@@ -8,8 +8,8 @@ fn main(){
     println!("If you've just joined enter 'new' else enter 'continue'");
     let mut greeting = String::new();
     io::stdin().read_line(&mut greeting).unwrap();
-    let greeting = greeting.trim();
-    match greeting{
+    let greeting = greeting.trim().to_lowercase();
+    match greeting.as_str(){
         "new"=>{
             println!("Hello {} the unknown traveller.",name);
         },
