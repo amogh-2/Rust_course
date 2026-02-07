@@ -1,5 +1,4 @@
-use std::io::BufRead;
-use std::io::BufReader;
+use std::io::{BufRead,BufReader};
 use std::fs::File;
 
 fn main(){
