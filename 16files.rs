@@ -8,7 +8,19 @@ fn path_spec()-> String{
 }
 
 fn main(){
-    let a_file = fs::read_to_string(path_spec()).expect("Failed to read");
-    println!("{}",a_file);
-     
+    let result = fs::read_to_string(path_spec());
+    let a_file = match result {
+        Ok(content) => content,
+        Err(error) => {
+            match error.kind() {
+                std::io::ErrorKind::NotFound => {
+                    panic!("The file doesn't exist");
+                }
+                _ => {
+                    panic!("There is an error finding the file: {}", error);
+                }
+            }
+        }
+    };
+    println!("{}", a_file);
 }
