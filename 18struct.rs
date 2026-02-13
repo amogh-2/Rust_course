@@ -6,7 +6,7 @@ struct User{
 
 impl User{
     fn new_user(name:String, age: u32)-> Self{
-        Self{
+        sSelf{
             name,
             age,
             active: true,
