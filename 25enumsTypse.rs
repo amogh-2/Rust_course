@@ -11,9 +11,9 @@ struct Color{
     shade: Red,
 }
 
-fn rndm_function(r: Red){
+fn supported_color(r: Red){
     match r{
-        Red::Maroon => println!("Picked the correct shade!"),
+        Red::Maroon => println!("Picked the correct shade: {:?}!",r),
         _=> println!("Incorrect shade picked."),
     }
 }
@@ -31,6 +31,7 @@ fn main(){
 
     println!("Color 1: {} of shade {:?}", color1.name, color1.shade);
     println!("Color 2: {} of shade {:?}", color2.name, color2.shade);
-       
+    supported_color(color1.shade);
+    supported_color(color2.shade);
     
 }
