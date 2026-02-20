@@ -15,5 +15,5 @@ fn main(){
         })
         .sum();
 
-    println!("The total area is: {:.2} sq. units ", total_area);
+    dbg!("The total area is: {:.2} sq. units ", total_area);
 }
