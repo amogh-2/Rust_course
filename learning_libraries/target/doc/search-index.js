@@ -1,0 +1,4 @@
+var searchIndex = new Map(JSON.parse('[["learning_libraries",{"t":"H","n":["read_stdin"],"q":[[0,"learning_libraries"],[1,"alloc::string"]],"i":"`","f":"{{}b}","D":"`","p":[[5,"String",1]],"r":[],"b":[],"c":"OjAAAAAAAAA=","e":"OjAAAAEAAAAAAAEAEAAAAAAAAQA=","P":[]}],["learning_libraries",{"t":"H","n":["read_stdin"],"q":[[0,"learning_libraries"],[1,"alloc::string"]],"i":"`","f":"{{}b}","D":"b","p":[[5,"String",1]],"r":[],"b":[],"c":"OjAAAAAAAAA=","e":"OjAAAAEAAAAAAAAAEAAAAAAA","P":[]}]]'));
+if (typeof exports !== 'undefined') exports.searchIndex = searchIndex;
+else if (window.initSearch) window.initSearch(searchIndex);
+//{"start":39,"fragment_lengths":[226,223]}

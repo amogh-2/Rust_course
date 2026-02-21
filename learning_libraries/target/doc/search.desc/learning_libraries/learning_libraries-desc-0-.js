@@ -1,0 +1,1 @@
+searchState.loadedDescShard("learning_libraries", 0, "this function reads a line from stdin and returns a String")
